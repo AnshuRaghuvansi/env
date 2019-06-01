@@ -13,6 +13,7 @@ func Configure() {
 	workingDir, err := os.Getwd()
 	if err != nil {
 		fmt.Println("ENV : Failed to get working directory")
+		return
 	}
 
 	//check for environment variable in both cases(lower and upper)
@@ -43,6 +44,7 @@ func readFile(filePath string) map[string]string {
 	data, err := ioutil.ReadFile(filePath)
 	if err != nil {
 		fmt.Println("ENV : Failed to get file for current environment")
+		return
 	}
 	values := strings.Split(string(data), "\n")
 
