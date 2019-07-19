@@ -58,6 +58,13 @@ func main() {
 
 	fmt.Println(port)
 	fmt.Println(pwd)
+	
+	To get specific type of value 
+	
+	prod, ok := GetBoolValue("IS_PRODUCTION")
+	if ok {
+		fmt.Println(prod)
+	}
 }
 
 ```
