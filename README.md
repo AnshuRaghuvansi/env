@@ -2,11 +2,11 @@
 
 env is a tiny package to handle environment variables in go application.
 
-# Install
+## Install
 
 	go get github.com/anshuraghuvansi/env
 
-Go Mod :
+### OR in Go Mod file:
 	require (
 		github.com/anshuraghuvansi/env v1.0.0
 	)
