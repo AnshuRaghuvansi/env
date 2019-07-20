@@ -2,6 +2,15 @@
 
 env is a tiny package to handle environment variables in go application.
 
+# Install
+
+	go get github.com/anshuraghuvansi/env
+
+Go Mod :
+	require (
+		github.com/anshuraghuvansi/env v1.0.0
+	)
+
 ## Getting Started
 
 Create a file with the name of environment(Ex. development.env, testing.env etc) in root directory.
