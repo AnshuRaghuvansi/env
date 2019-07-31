@@ -60,3 +60,17 @@ func readFile(filePath string) map[string]string {
 	}
 	return variablesMap
 }
+
+// IsProduction :
+func IsProduction() bool {
+
+	env := os.Getenv("ENVIRONMENT")
+	if len(env) == 0 {
+		env = os.Getenv("environment")
+	}
+
+	if len(env) == 0 {
+		return false
+	}
+	return (env == "production" || env == "PRODUCTION")
+}
